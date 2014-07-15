@@ -17,18 +17,19 @@ import com.stg.keke.util.MyAnimationListener;
 
 @SuppressLint("HandlerLeak")
 public class LoadingActivity extends Activity{
-	
+
 	private ImageView mAd;
 	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_loading);
 		mAd = (ImageView) findViewById(R.id.loading_ad);
-	
+
 		mHandler.sendEmptyMessageDelayed(0, 800);
 	}
-	
+
 	private Handler mHandler = new Handler(){
 		@Override
 		public void handleMessage(Message msg) {
@@ -42,7 +43,7 @@ public class LoadingActivity extends Activity{
 				animation.setAnimationListener(new MyAnimationListener(){
 					@Override
 					public void onAnimationEnd(Animation animation) {
-						mHandler.sendEmptyMessageDelayed(1, 40000);
+						mHandler.sendEmptyMessageDelayed(1, 400);
 					}
 				});
 				mAd.setVisibility(View.VISIBLE);
