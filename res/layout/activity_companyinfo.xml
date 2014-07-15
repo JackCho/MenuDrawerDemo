@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <RelativeLayout
+        android:id="@+id/companyinfo_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:id="@+id/companyinfo_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:text="@string/companyinfo_title"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/companyinfo_line"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/line_01" />
+    </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/companyinfo_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/line_01" />
+
+            <ImageView
+                android:id="@+id/companyinfo_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:onClick="terminate"
+                android:src="@drawable/finish_selector" />
+
+            <ImageView
+                android:id="@+id/companyinfo_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/comment_selector" 
+                android:visibility="invisible"/>
+
+
+            <ImageView
+                android:id="@+id/companyinfo_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@+id/companyinfo_comment"
+                android:src="@drawable/share_selector" 
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/companyinfo_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@+id/companyinfo_share"
+                android:src="@drawable/btn_add_selector" 
+                android:visibility="invisible"/>
+            
+             <ImageView
+                android:id="@+id/companyinfo_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@+id/companyinfo_add"
+                android:src="@drawable/btn_phone_selector" 
+                android:visibility="invisible"/>
+             
+
+        </RelativeLayout>
+
+        <WebView
+            android:id="@+id/companyinfo_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/companyinfo_bottom_layout"
+            android:layout_below="@+id/companyinfo_top_layout" 
+            android:layout_marginTop="10dp"/>
+   
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_menu" >
+
+    <ImageView
+        android:id="@+id/menu_avatar"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/menu_login_selector" />
+
+    <TextView
+        android:id="@+id/menu_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menu_avatar"
+        android:layout_centerHorizontal="true"
+        android:text="@string/activity_no_login" />
+
+    <ImageView
+        android:id="@+id/menu_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/icon_menu" />
+
+    <GridView
+        android:id="@+id/menu_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/menu_icon"
+        android:layout_below="@+id/menu_name"
+        android:layout_marginTop="30dp"
+        android:descendantFocusability="afterDescendants"
+        android:numColumns="3"
+        android:verticalSpacing="15dp" />
+
+</RelativeLayout>

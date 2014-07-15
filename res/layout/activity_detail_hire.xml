@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <include
+        android:id="@+id/detail_hire_comment_layout"
+        layout="@layout/activity_comment" 
+        android:visibility="gone"/>
+    
+     <include
+        android:id="@+id/detail_hire_companyinfo_layout"
+        layout="@layout/activity_companyinfo" 
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/detail_hire_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:background="@android:color/white"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#0c7aff" />
+
+        <TextView
+            android:id="@+id/hire_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:background="#0c7aff"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:text="@string/title_hotpot"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/hire_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="15dp"
+            android:text="03-15"
+            android:textColor="#7d7d7d"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/hire_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hire_tag"
+            android:layout_margin="10dp"
+            android:maxLines="2"
+            android:text="@string/hire_title"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        
+         <TextView
+             android:id="@+id/hire_introduction"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignRight="@+id/hire_time"
+             android:layout_below="@+id/hire_time"
+             android:layout_toLeftOf="@+id/hire_title"
+             android:layout_marginTop="-5dp"
+             android:text="@string/hire_introduction"
+             android:textColor="#007aff"
+             android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/hire_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/hire_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/line_01" />
+
+
+        <RelativeLayout
+            android:id="@+id/hire_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/line_01" />
+
+            <ImageView
+                android:id="@+id/hire_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:onClick="terminate"
+                android:src="@drawable/finish_selector" />
+
+            <ImageView
+                android:id="@+id/hire_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/comment_selector" />
+
+            <TextView
+                android:id="@+id/hire_comment_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/hire_comment"
+                android:layout_alignTop="@+id/hire_comment"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:text="23"
+                android:textColor="#fe6c6c"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/hire_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@+id/hire_comment"
+                android:src="@drawable/share_selector" />
+
+            <ImageView
+                android:id="@+id/hire_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@+id/hire_share"
+                android:src="@drawable/btn_add_selector" />
+            
+             <ImageView
+                android:id="@+id/hire_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@+id/hire_add"
+                android:src="@drawable/btn_phone_selector" />
+             
+
+        </RelativeLayout>
+
+        <WebView
+            android:id="@+id/hire_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/hire_bottom_layout"
+            android:layout_below="@+id/hire_line" 
+            android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

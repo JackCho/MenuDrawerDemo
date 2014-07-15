@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/logout_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white" >
+
+        <Button
+            android:id="@+id/logout_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:padding="15dp"
+            android:text="@string/logout_confirm"
+            android:textColor="#f66f75"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/logout_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_below="@+id/logout_confirm"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/line_01" />
+
+        <Button
+            android:id="@+id/logout_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logout_line"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:padding="15dp"
+            android:text="@string/cancel"
+            android:textColor="#2989be"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

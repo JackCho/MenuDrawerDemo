@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:id="@+id/login_layout"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white" >
+
+        <TextView
+            android:id="@+id/login_notice_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/login_notice_1"
+            android:textColor="#7d7d7d" />
+
+        <TextView
+            android:id="@+id/login_notice_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_notice_1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/login_notice_2"
+            android:textColor="#7d7d7d" />
+
+        <TextView
+            android:id="@+id/login_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_notice_2"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/login_by_qq"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/login_notice_2"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/login_middle"
+            android:background="@drawable/qq_login_selector" />
+
+        <ImageView
+            android:id="@+id/login_by_sina"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/login_notice_2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/login_middle"
+            android:background="@drawable/sina_login_selector" />
+
+        <TextView
+            android:id="@+id/login_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_below="@+id/login_by_sina"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/line_01" />
+
+        <Button
+            android:id="@+id/login_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_line"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:padding="15dp"
+            android:textSize="16sp"
+            android:text="@string/cancel"
+            android:textColor="#2989be" />
+    </RelativeLayout>
+
+</RelativeLayout>

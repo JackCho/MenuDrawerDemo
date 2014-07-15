@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.stg.keke.widget.HorizontalListView
+        android:id="@+id/info_fragmet_top_listview"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:background="#f6f6f6" />
+
+    <com.stg.keke.widget.xlistview.XListView
+        android:id="@+id/info_fragment_bottom_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/info_fragmet_top_listview"
+        android:divider="@null" />
+
+    <include
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/main_top_layout" />
+
+</RelativeLayout>

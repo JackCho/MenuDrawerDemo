@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/loadbackgroup"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:padding="15dip"
+        android:text="@string/loading"
+        android:textColor="#ffffff" />
+
+    <ImageView
+        android:id="@+id/img_load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/loadrefresh"
+        android:contentDescription="@string/app_name" />
+
+    <ImageView
+        android:id="@+id/img_ling"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="@drawable/loadline"
+        android:contentDescription="@string/app_name" />
+
+    <RelativeLayout
+        android:id="@+id/img_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:padding="15dip" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/loadcancel"
+            android:contentDescription="@string/app_name" />
+
+    </RelativeLayout>
+
+</LinearLayout>

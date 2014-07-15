@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8e8e8" >
+
+    <RelativeLayout
+        android:id="@+id/loading_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp" >
+
+        <TextView
+            android:id="@+id/loading_keke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/loading_keke"
+            android:textColor="@android:color/black"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/loading_icon"
+            android:layout_width="130dp"
+            android:layout_height="25dp"
+            android:layout_alignTop="@+id/loading_keke"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/loading_keke"
+            android:src="@drawable/icn_about_02" />
+
+        <TextView
+            android:id="@+id/loading_notice_zh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/loading_keke"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/loading_keke"
+            android:gravity="top"
+            android:text="@string/loading_notice_zh"
+            android:textColor="#787878"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/loading_notice_en"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/loading_notice_zh"
+            android:layout_below="@+id/loading_notice_zh"
+            android:gravity="top"
+            android:text="@string/loading_notice_en"
+            android:textColor="#787878"
+            android:textSize="8sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/loading_ad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/loading_bottom_layout"
+        android:scaleType="fitXY"
+        android:src="@drawable/loading_ad"
+        android:visibility="gone" />
+
+</RelativeLayout>
